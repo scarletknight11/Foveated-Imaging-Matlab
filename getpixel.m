@@ -29,13 +29,16 @@ y1 = 404;
 
 x = 1:353;
 y = 1:483;
+
 %Returns 2-D grid coordinates based on the coordinates contained in vectors x and y. 
 %X is a matrix where each row is a copy of x, & Y is a matrix where each column is a copy of y
 [X,Y] = meshgrid(y,x);
 
 distance = sqrt((X-x1).^2 + (Y-y1).^2);
 
-
+for dist = 1:distance
+     
+end
 
 %specify the rows, columns, rgb and image number with m using indexing
 a = m(:,:,:,2);
